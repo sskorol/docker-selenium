@@ -1,5 +1,5 @@
 FROM ubuntu:16.04
-MAINTAINER Selenium <selenium-developers@googlegroups.com>
+MAINTAINER Serhii Korol <serhii.s.korol@gmail.com.com>
 
 #================================================
 # Customize sources for apt-get
@@ -25,8 +25,8 @@ RUN apt-get update -qqy \
 #==========
 # Selenium
 #==========
-RUN  mkdir -p /opt/selenium \
-  && wget --no-verbose https://selenium-release.storage.googleapis.com/2.53/selenium-server-standalone-2.53.0.jar -O /opt/selenium/selenium-server-standalone.jar
+RUN  mkdir -p /opt/selenium
+COPY lib/selenium-grid-2.53.0-jar-with-dependencies.jar /opt/selenium/selenium-server-standalone.jar
 
 #========================================
 # Add normal user with passwordless sudo

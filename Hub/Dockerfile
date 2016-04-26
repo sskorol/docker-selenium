@@ -1,5 +1,5 @@
-FROM selenium/base:2.53.0
-MAINTAINER Selenium <selenium-developers@googlegroups.com>
+FROM sskorol/base:2.53.0
+MAINTAINER Serhii Korol <serhii.s.korol@gmail.com.com>
 
 #========================
 # Selenium Configuration

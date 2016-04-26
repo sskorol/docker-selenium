@@ -1,5 +1,5 @@
-FROM selenium/node-base:2.53.0
-MAINTAINER Selenium <selenium-developers@googlegroups.com>
+FROM sskorol/node-base:2.53.0
+MAINTAINER Serhii Korol <serhii.s.korol@gmail.com.com>
 
 USER root
 

@@ -1,14 +1,15 @@
-FROM selenium/node-chrome:2.53.0
-MAINTAINER Selenium <selenium-developers@googlegroups.com>
+FROM sskorol/node-chrome:2.53.0
+MAINTAINER Serhii Korol <serhii.s.korol@gmail.com.com>
 
 USER root
 
 #=====
-# VNC
+# VNC, avconv
 #=====
 RUN apt-get update -qqy \
   && apt-get -qqy install \
     x11vnc \
+    libav-tools \
   && rm -rf /var/lib/apt/lists/* \
   && mkdir -p ~/.vnc \
   && x11vnc -storepasswd secret ~/.vnc/passwd

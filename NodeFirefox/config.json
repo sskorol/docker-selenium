@@ -1,18 +1,14 @@
 {
   "capabilities": [
     {
-      "browserName": "*firefox",
-      "maxInstances": 1,
-      "seleniumProtocol": "Selenium"
-    },
-    {
       "browserName": "firefox",
       "maxInstances": 1,
       "seleniumProtocol": "WebDriver"
     }
   ],
   "configuration": {
-    "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+    "proxy": "com.blogspot.notes.automation.qa.grid.core.HubProxy",
+    "servlets": "com.blogspot.notes.automation.qa.grid.core.VideoRecordingServlet",
     "maxSession": 1,
     "port": 5555,
     "register": true,
