@@ -4,12 +4,14 @@ MAINTAINER Serhii Korol <serhii.s.korol@gmail.com.com>
 USER root
 
 #=====
-# VNC, avconv
+# VNC, ffmpeg
 #=====
 RUN apt-get update -qqy \
+  && DEBIAN_FRONTEND=noninteractive apt-get -qqy install software-properties-common python-software-properties \
+  && DEBIAN_FRONTEND=noninteractive add-apt-repository ppa:djcj/hybrid \
   && apt-get -qqy install \
     x11vnc \
-    libav-tools \
+    ffmpeg \
   && rm -rf /var/lib/apt/lists/* \
   && mkdir -p ~/.vnc \
   && x11vnc -storepasswd secret ~/.vnc/passwd
