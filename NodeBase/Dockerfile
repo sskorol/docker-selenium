@@ -1,4 +1,4 @@
-FROM sskorol/base:2.53.0
+FROM sskorol/base:2.53.1
 MAINTAINER Serhii Korol <serhii.s.korol@gmail.com.com>
 
 ENV DEBIAN_FRONTEND noninteractive

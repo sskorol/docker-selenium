@@ -26,7 +26,7 @@ RUN apt-get update -qqy \
 # Selenium
 #==========
 RUN  mkdir -p /opt/selenium
-COPY lib/selenium-grid-2.53.0-jar-with-dependencies.jar /opt/selenium/selenium-server-standalone.jar
+COPY lib/selenium-grid-2.53.1-jar-with-dependencies.jar /opt/selenium/selenium-server-standalone.jar
 
 #========================================
 # Add normal user with passwordless sudo
