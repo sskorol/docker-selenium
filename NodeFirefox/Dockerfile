@@ -1,4 +1,4 @@
-FROM sskorol/node-base:2.53.0
+FROM sskorol/node-base:2.53.1
 MAINTAINER Serhii Korol <serhii.s.korol@gmail.com.com>
 
 USER root
